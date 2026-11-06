@@ -1,0 +1,604 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7ed;
+  color: #243b2b;
+}
+
+/* WARNA WEBSITE */
+:root {
+  --green-dark: #123c2a;
+  --green: #2e7d46;
+  --green-light: #dcebd9;
+  --cream: #f5f7ed;
+  --orange: #f4a340;
+  --white: #ffffff;
+}
+
+/* NAVBAR */
+header {
+  background-color: var(--green-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: var(--orange);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--orange);
+}
+
+/* BACKGROUND */
+.bg {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+
+  background:
+    linear-gradient(90deg, rgba(12, 43, 28, 0.92), rgba(12, 43, 28, 0.45)),
+    url("gambar/3r.webp");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-content {
+  max-width: 650px;
+  color: white;
+}
+
+.tagline {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.bg h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.bg h1 span {
+  color: var(--orange);
+}
+
+.bg-content > p:not(.tagline) {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--orange);
+  color: var(--green-dark);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  transform: translateY(-3px);
+}
+
+.btn-green {
+  background-color: var(--green);
+  color: white;
+}
+
+/* TENTANG */
+.tentang {
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.tentang-image {
+  flex: 1;
+}
+
+.tentang-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.tentang-content {
+  flex: 1;
+}
+
+.section-label {
+  color: var(--green);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.tentang h2,
+.manfaat h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.tentang h2 span,
+.manfaat h2 span,
+.section-heading h2 span {
+  color: var(--green);
+}
+
+.tentang-content > p:not(.section-label) {
+  color: #667568;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* PRODUK IPAS */
+.produk {
+  padding: 50px 20px;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.produk h2 {
+  color: #2e7d32;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.deskripsi {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.daftar-produk {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card-produk {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-produk img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-produk h3 {
+  color: #388e3c;
+  margin: 15px 0 8px;
+}
+
+.card-produk p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.card-produk details {
+  margin-top: 12px;
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card-produk summary {
+  color: #2e7d32;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-produk details[open] summary {
+  margin-bottom: 10px;
+}
+
+.card-produk details p {
+  font-size: 14px;
+}
+
+/* MATA PELAJARAN */
+
+#mapel {
+  padding: 50px 8%;
+  background-color: #f5f8f6;
+  font-family: Arial, sans-serif;
+  color: #234b32;
+}
+
+.judul-mapel {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.judul-mapel h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.judul-mapel p {
+  color: #666;
+}
+
+/* Kartu Mapel */
+
+.mapel-card {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mapel-card h3 {
+  color: #39834f;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.mapel-card > p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Tombol Baca */
+
+.mapel-card summary {
+  background-color: #39834f;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.mapel-card summary:hover {
+  background-color: #28633a;
+}
+
+/* Isi Materi */
+
+.materi {
+  background-color: #f1f8f2;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  line-height: 1.7;
+}
+
+.materi h4 {
+  color: #234b32;
+  margin-bottom: 15px;
+}
+.materi img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.materi p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.materi ul,
+.materi ol {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+/* PRODUK KAMI */
+.recycle h2 {
+  text-align: center;
+}
+.deskripsi {
+  text-align: center;
+}
+/* MANFAAT */
+.manfaat {
+  padding: 100px 8%;
+  background-color: var(--green-dark);
+  color: white;
+}
+
+.manfaat-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.manfaat .section-label {
+  color: var(--orange);
+}
+
+.manfaat h2 span {
+  color: var(--orange);
+}
+
+.manfaat-content > p:not(.section-label) {
+  color: #d2dfd5;
+  line-height: 1.8;
+}
+
+.manfaat-list {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.manfaat-list div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/*SINGKATAN */
+.singkatan {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--orange);
+  color: var(--green-dark);
+}
+
+.singkatan h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.singkatan p {
+  margin-bottom: 25px;
+}
+
+.singkatan .btn {
+  background-color: var(--green-dark);
+  color: white;
+}
+
+/* ANGGOTA */
+.anggota-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.anggota-card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.anggota-card:hover {
+  transform: translateY(-8px);
+}
+
+.anggota-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid #16a34a;
+  margin-bottom: 20px;
+}
+
+.anggota-card h3 {
+  margin-bottom: 10px;
+  color: #14532d;
+}
+
+.anggota-card p {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.anggota-card a {
+  color: #16a34a;
+  text-decoration: none;
+}
+
+/* KONTAK KAMI */
+
+#kontak {
+  background-color: #f1f8f2;
+  padding: 50px 8%;
+  font-family: Arial, sans-serif;
+  color: #234b32;
+}
+
+#kontak h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.deskripsi {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* Tampilan Kontak */
+.kontak-container {
+  display: flex;
+  gap: 25px;
+}
+
+/* Formulir */
+.form-kontak,
+.info-kontak {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.form-kontak h3,
+.info-kontak h3 {
+  margin-bottom: 20px;
+}
+
+.form-kontak label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-kontak textarea {
+  height: 100px;
+}
+
+.form-kontak button {
+  background-color: #39834f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-kontak button:hover {
+  background-color: #28633a;
+}
+
+/* Informasi Kontak */
+.info-kontak p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-kontak a {
+  display: inline-block;
+  background-color: #39834f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #173f2b;
+  color: white;
+  padding: 40px 20px 15px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-info {
+  max-width: 350px;
+}
+
+.footer h2 {
+  color: #a8d5a2;
+  font-size: 22px;
+}
+
+.footer h3 {
+  color: #a8d5a2;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #a8d5a2;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #477456;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+}
