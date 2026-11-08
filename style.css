@@ -5,13 +5,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f7ed;
   color: #243b2b;
 }
-
 /* WARNA WEBSITE */
 :root {
   --green-dark: #123c2a;
@@ -21,7 +19,6 @@ body {
   --orange: #f4a340;
   --white: #ffffff;
 }
-
 /* NAVBAR */
 header {
   background-color: var(--green-dark);
@@ -29,61 +26,50 @@ header {
   top: 0;
   z-index: 100;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
 }
-
 .logo {
   font-size: 25px;
   font-weight: bold;
   color: white;
 }
-
 .logo span {
   color: var(--orange);
 }
-
 .nav-menu {
   display: flex;
   list-style: none;
   gap: 30px;
 }
-
 .nav-menu a {
   text-decoration: none;
   color: white;
   font-size: 15px;
   transition: 0.3s;
 }
-
 .nav-menu a:hover {
   color: var(--orange);
 }
-
 /* BACKGROUND */
 .bg {
   min-height: 600px;
   display: flex;
   align-items: center;
   padding: 80px 8%;
-
   background:
     linear-gradient(90deg, rgba(12, 43, 28, 0.92), rgba(12, 43, 28, 0.45)),
-    url("3r.webp");
-
+    url("gambar/3r.webp");
   background-size: cover;
   background-position: center;
 }
-
 .bg-content {
   max-width: 650px;
   color: white;
 }
-
 .tagline {
   color: var(--orange);
   font-size: 14px;
@@ -91,23 +77,19 @@ header {
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
-
 .bg h1 {
   font-size: 55px;
   line-height: 1.2;
   margin-bottom: 25px;
 }
-
 .bg h1 span {
   color: var(--orange);
 }
-
 .bg-content > p:not(.tagline) {
   font-size: 17px;
   line-height: 1.8;
   margin-bottom: 30px;
 }
-
 /* BUTTON */
 .btn {
   display: inline-block;
@@ -349,42 +331,6 @@ header {
 .deskripsi {
   text-align: center;
 }
-/* MANFAAT */
-.manfaat {
-  padding: 100px 8%;
-  background-color: var(--green-dark);
-  color: white;
-}
-
-.manfaat-content {
-  max-width: 700px;
-  margin: auto;
-}
-
-.manfaat .section-label {
-  color: var(--orange);
-}
-
-.manfaat h2 span {
-  color: var(--orange);
-}
-
-.manfaat-content > p:not(.section-label) {
-  color: #d2dfd5;
-  line-height: 1.8;
-}
-
-.manfaat-list {
-  margin-top: 30px;
-  display: grid;
-  gap: 15px;
-}
-
-.manfaat-list div {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-}
 
 /*SINGKATAN */
 .singkatan {
@@ -484,7 +430,6 @@ header {
   gap: 25px;
 }
 
-/* Formulir */
 .form-kontak,
 .info-kontak {
   background-color: white;
