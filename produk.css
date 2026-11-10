@@ -21,7 +21,7 @@ header h2 {
   margin-bottom: 4px;
 }
 header p {
-  color: #94a3b8;
+  color: white;
   font-size: 0.9rem;
 }
 main {
@@ -44,11 +44,11 @@ main {
   border: 1px solid #123c2a;
 }
 .content-card {
-  background: #438b59;
+  background: #33834b;
   padding: 22px;
   border-radius: 14px;
   margin-bottom: 18px;
-  border: 1px solid #82ce99;
+  border: 1px solid #33834b;
 }
 .content-card h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -58,7 +58,7 @@ main {
 }
 .content-card p,
 .content-card li {
-  color: #94a3b8;
+  color: white;
   font-size: 0.93rem;
 }
 .content-card ul {
@@ -67,7 +67,7 @@ main {
 .back-link {
   display: inline-block;
   background: #123c2a;
-  color: #10b981;
+  color: white;
   padding: 11px 18px;
   border-radius: 9px;
   margin-top: 18px;
@@ -77,6 +77,6 @@ main {
 }
 .back-link:hover {
   background: #10b981;
-  color: #123c2a;
+  color: #287252;
   border-color: #10b981;
 }
