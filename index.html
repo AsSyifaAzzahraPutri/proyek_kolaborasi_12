@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sampah Menjadi Barang Berharga</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
     <!-- NAVBAR --> 
@@ -12,12 +14,34 @@
       <nav class="navbar">
         <div class="logo"> Eco<span>Cycle</span></div>
 
-        <ul class="nav-menu">
+        <div class="nav-menu">
           <li><a href="#home">Beranda</a></li>
-          <li><a href="#tentang">Tentang</a></li>
           <li><a href="#produk">Produk</a></li>
+          <li><a href="#mapel">Mapel Kolaboratif</a></li>
           <li><a href="#anggota">Kelompok</a></li>
-        </ul>
+          <li><a href="#kontak">Kontak</a></li>
+        </div>
+
+         <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="navdropdown"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="#home">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#mapel">Mapel Kolaboratif</a>
+        <a href="#anggota">Anggota</a>
+        <a href="#kontak">Kontak</a>
+      </div>
       </nav>
     </header>
     <!-- background -->
@@ -31,7 +55,7 @@
           <span>Barang Berharga</span>
         </h1>
 
-        <p>
+        <p 1>
           Ubah sampah menjadi sesuatu yang bernilai. Mulai langkah kecil untuk
           lingkungan yang lebih bersih dan masa depan yang lebih hijau.
         </p>
@@ -42,7 +66,7 @@
     <!-- TENTANG -->
     <section class="tentang" id="tentang">
       <div class="tentang-image">
-        <img src="r3.jpg" alt="r3" />
+        <img src="./gambar/r3.jpg" alt="r3" />
       </div>
 
       <div class="tentang-content">
@@ -76,7 +100,7 @@
     <div class="daftar-produk">
 
         <div class="card-produk">
-            <img src="hiasan keyboard.jpeg" alt="hiasan keyboard">
+            <img src="./gambar/hiasan keyboard.jpeg" alt="hiasan keyboard">
             <h3>Hiasan Meja dari Keyboard Bekas.</h3>
             <p>Hiasan meja ini dibuat dari tombol keyboard bekas yang 
               disusun berbentuk bola dan dipasang pada dudukan sehingga menjadi hiasan unik dan menarik.</p>
@@ -84,7 +108,7 @@
         </div>
 
         <div class="card-produk">
-            <img src="gantungan kunci.jpeg" alt="gantungan kunci">
+            <img src="./gambar/gantungan kunci.jpeg" alt="gantungan kunci">
             <h3>Gantungan kunci dari PCB</h3>
             <p>Gantungan kunci ini dibuat dari limbah papan sirkuit (PCB) 
               yang dipadukan dengan resin transparan dan bingkai logam, sehingga 
@@ -93,7 +117,7 @@
         </div>
 
         <div class="card-produk">
-            <img src="hiasan.jpeg" alt="Wadah dari Cangkang Mouse">
+            <img src="./gambar/hiasan.jpeg" alt="Wadah dari Cangkang Mouse">
             <h3>Wadah dari Cangkang Mouse</h3>
             <p>Wadah kecil dari cangkang mouse bekas merupakan 
               kerajinan daur ulang limbah elektronik yang dimanfaatkan 
@@ -102,7 +126,7 @@
         </div>
 
         <div class="card-produk">
-            <img src="tempat pensil.jpeg" alt="tempat pensil">
+            <img src="./gambar/tempat pensil.jpeg" alt="tempat pensil">
             <h3>Tempat Alat Tulis dari Kardus Bekas.</h3>
             <p>Tempat alat tulis dari kardus merupakan kerajinan daur ulang 
               yang berguna untuk menyimpan perlengkapan belajar sekaligus mengurangi sampah.</p>
@@ -110,7 +134,7 @@
         </div>
 
         <div class="card-produk">
-            <img src="pot tanaman.jpeg" alt="pot tanaman">
+            <img src="./gambar/pot tanaman.jpeg" alt="pot tanaman">
             <h3>Pot Tanaman dari Botol Plastik</h3>
             <p>Pot tanaman dari botol plastik bekas merupakan 
               kerajinan daur ulang yang dihias menarik dan digunakan untuk menanam bunga atau tanaman hias.</p>
@@ -118,7 +142,7 @@
         </div>
 
         <div class="card-produk">
-            <img src="jam dinding daur ulang.jpeg" alt="Jam dinding daur ulang">
+            <img src="./gambar/jam dinding daur ulang.jpeg" alt="Jam dinding daur ulang">
             <h3>Hiasan Jam Dinding</h3>
             <p>Jam dinding hias merupakan kerajinan yang berfungsi sebagai 
               penunjuk waktu sekaligus dekorasi ruangan dengan hiasan warna-warni dan bunga.</p>
@@ -143,7 +167,7 @@
 
           <div class="materi">
             <h4>Aprilia Hidayatulila</h4>
-            <img src="Matematika yaya.jpeg" alt="matematika yaya">
+            <img src="./gambar/Matematika yaya.jpeg" alt="matematika yaya">
               <p>
               <ul>
              <li>Permisalan </li>
@@ -173,7 +197,7 @@
 
           <div class="materi">
             <h4>As Syifa Azzahra Putri</h4>
-            <img src="Matematika syifa.jpeg" alt="matematika syifa">
+            <img src="./gambar/Matematika syifa.jpeg" alt="matematika syifa">
             <p>
               <ul>
              <li>Permisalan </li>
@@ -205,7 +229,7 @@
 
           <div class="materi">
             <h4>Della Ayu Nur Syafitri</h4>
-            <img src="matematika della.jpeg" alt="matematika della">
+            <img src="./gambar/matematika della.jpeg" alt="matematika della">
               <p>
               <ul>
              <li>Permisalan </li>
@@ -438,24 +462,42 @@
 
         <div class="anggota-container">
           <div class="anggota-card">
-            <img src="april.jpeg" alt="Aprilia Hidayatulila" />
+            <img src="./gambar/april.jpeg" alt="Aprilia Hidayatulila" />
             <h3>Aprilia Hidayatulila</h3>
             <p>X PPLG 1 (5)</p>
-            <a href="mailto:aprilia.p26021@satamail.my.id"> Email Aprilia</a>
+            <div class="sosial-media"><a href="https://instagram.com/ap_rilia2528" target="_blank">
+              <i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/087712039388" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:aprilia.p26021@satamail.my.id">
+                  <i class="fa-solid fa-envelope"></i></a>
+            </div>
           </div>
 
           <div class="anggota-card">
-            <img src="sifa.jpeg" alt="Asyifa Azzahra Putri" />
+            <img src="./gambar/sifa.jpeg" alt="Asyifa Azzahra Putri" />
             <h3>As Syifa Azzahra Putri</h3>
             <p>X PPLG 1 (6)</p>
-            <a href="mailto:as.p26023@satamail.my.id"> Email Asyifa </a>
+             <div class="sosial-media"><a href="https://instagram.com/sypazhraaaaa" target="_blank">
+              <i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/085866463313" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:as.p26023@satamail.my.id">
+                  <i class="fa-solid fa-envelope"></i></a>
+            </div>
           </div>
 
           <div class="anggota-card">
-            <img src="della.jpeg" alt="Della Ayu Nur Syafitri" />
+            <img src="./gambar/della.jpeg" alt="Della Ayu Nur Syafitri" />
             <h3>Della Ayu Nur Syafitri</h3>
             <p>X PPLG 1 (13)</p>
-            <a href="mailto:della.p26049@satamil.my.id"> Email Della </a>
+            <div class="sosial-media"><a href="https://instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/081646824009" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:della.p26049@satamail.my.id">
+                  <i class="fa-solid fa-envelope"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -518,24 +560,76 @@
             <p>
                 Mengubah sampah menjadi barang berharga
                 melalui kreativitas dan daur ulang.
+                <br>"Bersama kita wujudkan lingkungan yang lebih bersih dengan mengolah limbah 
+                menjadi barang yang bermanfaat dan bernilai jual tinggi."
+                <br><Strong>Kurangi sampah,tingkatkan kreativitas,dan ciptakan barang bernilai dari sesuatu yang dianggap tidak berguna.</Strong>
             </p>
         </div>
 
         <div class="footer-links">
             <h3>Tautan</h3>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#produk">Produk</a></li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#mapel">Mapel Kolaboratif</a></li>
+          <li><a href="#anggota">Kelompok</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </div>
 
         <div class="footer-contact">
             <h3>Kontak Kami</h3>
-             <a href="mailto:aprilia.p26021@satamail.my.id"> Email Aprilia</a>
-             <br>
-             <a href="mailto:as.p26023@satamail.my.id"> Email Asyifa </a>
-             <br>
-             <a href="mailto:della.p26049@satamil.my.id"> Email Della </a>
-            <p>SMKN TENGARAN</p>
+             <section class="anggota" id="anggota">
+    <div class="container">
+        <div class="anggota-list">
+            <div class="anggota-card">
+                <h3>Aprilia Hidayatulila</h3>
+                <div class="sosial-media">
+                    <a href="https://instagram.com/ap_rilia2528" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/087712039388" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:aprilia.p26021@satamail.my.id">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="anggota-card">
+                <h3>As Syifa Azzahra Putri</h3>
+                <div class="sosial-media">
+                    <a href="https://instagram.com/sypazhraaaaa" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/085866463313" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:as.p26023@satamail.my.id">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="anggota-card">
+                <h3>Della Ayu Nur Syafitri</h3>
+                <div class="sosial-media">
+                    <a href="https://instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/081646824009" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:della.p26049@satamail.my.id">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         </div>
     </div>
     </main>
