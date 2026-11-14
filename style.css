@@ -91,7 +91,7 @@ header {
   padding: 80px 8%;
   background:
     linear-gradient(90deg, rgba(12, 43, 28, 0.92), rgba(12, 43, 28, 0.45)),
-    url("3r.webp");
+    url("gambar/3r.webp");
   background-size: cover;
   background-position: center;
   max-width: 100%;
@@ -109,14 +109,14 @@ header {
   letter-spacing: 2px;
   margin-bottom: 20px;
   position: relative;
-  top: 80px;
+  top: 5px;
 }
 .bg h1 {
   font-size: 55px;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin: 15px auto;
   position: relative;
-  top: 80px;
+  top: 5px;
 }
 .bg h1 span {
   color: var(--orange);
@@ -124,9 +124,11 @@ header {
 .bg-content > p:not(.tagline) {
   font-size: 17px;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin: 15px auto;
   position: relative;
-  top: 80px;
+  top: 5px;
+  text-align: center;
+  max-width: 700px;
 }
 /* BUTTON */
 .btn {
@@ -139,7 +141,8 @@ header {
   border-radius: 8px;
   transition: 0.3s;
   position: relative;
-  top: 50px;
+  top: 5px;
+  margin: 10px auto;
 }
 
 .btn:hover {
@@ -378,13 +381,13 @@ header {
   padding: 60px 40px;
   background-color: var(--orange);
   color: var(--green-dark);
-  margin: 30px 25px;
+  margin: 100px 95px;
   border-radius: 10px;
 }
 
 .section {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .singkatan h2 {
@@ -600,14 +603,17 @@ header {
   text-align: center;
   border-top: 1px solid #477456;
   margin-top: 30px;
-  padding-top: 15px;
-  background-color: #123c2a;
+  padding: 15px 0;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-bottom p {
   font-size: 13px;
-  background-color: #173f2b;
+  background-color: transparent;
   color: white;
+  margin: 0;
 }
 .sosial-media {
   display: flex;
@@ -645,4 +651,24 @@ header {
 }
 .container {
   margin-bottom: 10px;
+}
+footer {
+  width: 100%;
+  background-color: #173f2b;
+  color: white;
+  margin: 0;
+  padding: 40px 30px 0;
+  box-sizing: border-box;
+}
+footer,
+footer * {
+  box-sizing: border-box;
+}
+
+.footer-bottom {
+  border-bottom: none;
+}
+
+footer hr {
+  display: none;
 }

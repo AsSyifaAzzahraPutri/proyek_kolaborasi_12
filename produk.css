@@ -8,6 +8,9 @@ body {
   background: #dcebd9;
   color: #f1f5f9;
   line-height: 1.7;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #123c2a;
@@ -37,7 +40,7 @@ header {
   color: white;
 }
 .logo span {
-  color: var(--orange);
+  color: #f4a340;
 }
 .nav-menu {
   display: flex;
@@ -161,6 +164,9 @@ main {
   color: white;
   padding: 40px 20px 15px;
   font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -199,8 +205,20 @@ main {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
+.footer-links li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-links li::before {
+  content: "●";
+  color: white;
+  font-size: 15px;
+}
 .footer-links a:hover {
   color: #a8d5a2;
 }
@@ -209,22 +227,34 @@ main {
   text-align: center;
   border-top: 1px solid #477456;
   margin-top: 30px;
-  padding-top: 15px;
+  padding: 15px 0;
   background-color: #123c2a;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-bottom p {
   font-size: 13px;
   background-color: #173f2b;
   color: white;
+  margin: 0;
 }
 .sosial-media {
   display: flex;
   justify-content: center;
   gap: 18px;
   margin-top: 15px;
+  background-color: #f5f5f5;
 }
-
+.anggota-card {
+  background: #f5f5f5;
+  width: 100%;
+  max-width: 550px;
+  padding: 20px 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
 .sosial-media a {
   width: 38px;
   height: 38px;
@@ -232,7 +262,7 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #ae9;
+  background: #a9eaaf;
   color: #2e7d32;
   font-size: 19px;
   text-decoration: none;
@@ -254,4 +284,10 @@ main {
 }
 .container {
   margin-bottom: 10px;
+}
+footer {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
 }
